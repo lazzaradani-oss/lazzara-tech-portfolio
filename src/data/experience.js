@@ -1,78 +1,79 @@
 export const experience = [
   {
     id: 1,
-    year: '2024 - Present',
-    title: 'AI Automation Specialist',
-    company: 'Freelance',
-    description: 'Designing and implementing scalable automation workflows for businesses using Make, Zapier, and n8n. Specializing in AI-powered solutions that bridge business requirements with technical execution.',
+    year: '2015 - 2025',
+    title: 'Logistics & Client Trust Manager',
+    company: 'Rover',
+    description: 'Managed high-responsibility logistics operations for pet care services, implementing digital workflows and risk management systems.',
     highlights: [
-      'Built 20+ automation workflows saving clients 1000+ hours monthly',
-      'Integrated AI models (Gemini, OpenAI) into business processes',
-      'Achieved 95% client satisfaction rate'
+      'Architected end-to-end digital workflows and dynamic scheduling systems for high-responsibility assets, achieving a 0% incident rate through disciplined risk management',
+      'Optimized real-time routing and resource allocation using mobile-first CRM platforms, maintaining a 90% repeat client rate and 100% 5-star rating',
+      'Implemented structured communication protocols and centralized data management systems to improve service coverage and operational reliability'
     ]
   },
   {
     id: 2,
-    year: '2023 - 2024',
-    title: 'Automation Engineering Program',
-    company: 'TripleTen',
-    description: 'Intensive bootcamp focused on AI automation, workflow design, and no-code/low-code platforms. Completed projects in predictive analytics, sentiment analysis, and process optimization.',
+    year: '2022 - 2024',
+    title: 'Customer Care & Product Consultant',
+    company: 'FOY Life Holistic Recovery Center',
+    description: 'Provided customer care and consultation services in a holistic recovery center, focusing on data-driven client retention and HIPAA compliance.',
     highlights: [
-      'Graduated with honors (Top 10% of cohort)',
-      'Mastered Make.com, Zapier, n8n, and Python automation',
-      'Built capstone project: Multi-channel sentiment analysis system'
+      'Orchestrated structured client data and clinical observations, increasing client retention by 25% through personalized, data-driven service delivery',
+      'Maintained 100% HIPAA compliance while documenting complex behavioral progress, creating reusable knowledge assets applicable to scalable AI training',
+      'Translated complex wellness and clinical concepts into actionable digital workflows, mirroring structured documentation requirements of high-fidelity behavior plans'
     ]
   },
   {
     id: 3,
-    year: '2021',
-    title: 'Herbalist & E-commerce Founder',
-    company: 'Self-Employed',
-    description: 'After earning my herbalist certificate, I launched an e-commerce store to streamline ordering and distribution of herbal products for friends and family who were eager to invest in my herbal salves.',
+    year: '2019 - 2025',
+    title: 'RBT Trainee / Clinical Assistant',
+    company: 'Blooming Child Dev. & Paradigm Malibu',
+    description: 'Assisted in behavioral therapy and clinical operations for pediatric clients, ensuring accurate data collection and intervention implementation.',
     highlights: [
-      'Built full e-commerce platform from scratch',
-      'Managed product development and distribution',
-      'Created efficient ordering system for community-based business'
-    ],
-    link: {
-      text: 'View Store',
-      url: 'https://dani-lazzara.square.site/'
-    }
+      'Recorded high-fidelity behavioral data for pediatric clients, ensuring 100% accuracy in ABC (Antecedent-Behavior-Consequence) tracking to drive treatment plan efficacy',
+      'Collaborated in the implementation of Behavior Intervention Plans (BIPs) under BCBA supervision, focusing on data-driven reduction of maladaptive behaviors',
+      'Executed real-time documentation of behavioral observations in residential settings, ensuring a safe, therapeutic, and regulatory-compliant environment'
+    ]
   },
   {
     id: 4,
-    year: '2020 - 2023',
-    title: 'Logistics & Client Trust Specialist',
-    company: 'Various Companies',
-    description: 'Managed complex logistics operations and built trusted relationships with high-value clients. Identified process inefficiencies and implemented improvement strategies.',
+    year: '2018',
+    title: 'B.A. Psychology',
+    company: 'California State University, Northridge',
+    description: 'Completed Bachelor of Arts degree in Psychology, providing foundation in behavioral science and data analysis.',
     highlights: [
-      'Optimized supply chain workflows, reducing delays by 40%',
-      'Maintained 98% client retention rate',
-      'Developed client communication protocols adopted company-wide'
+      'Graduated with focus on behavioral psychology and data-driven approaches',
+      'Prepared foundation for clinical and automation work'
     ]
   },
   {
     id: 5,
-    year: '2018 - 2020',
-    title: 'Customer Care Manager',
-    company: 'Service Industry',
-    description: 'Led customer service teams and implemented quality assurance processes. Recognized patterns in customer feedback and translated them into operational improvements.',
+    year: '2026',
+    title: 'RBT Certification',
+    company: 'BACB',
+    description: 'Certified Registered Behavior Technician, specializing in applied behavior analysis.',
     highlights: [
-      'Improved customer satisfaction scores by 25%',
-      'Trained and mentored 15+ team members',
-      'Created feedback loop system that reduced complaint resolution time by 60%'
+      'Certified in ABA/BIP implementation and behavioral data analysis'
     ]
   },
   {
     id: 6,
-    year: '2017 - 2018',
-    title: 'Web Developer',
-    company: 'Independent Projects',
-    description: 'Built and maintained WordPress websites focused on recipe content, developing skills in web design, content management, and user experience.',
+    year: '2025 - 2026',
+    title: 'AI Automation & Machine Learning',
+    company: 'TripleTen',
+    description: 'Completed intensive program in AI automation and machine learning.',
     highlights: [
-      'Created multiple WordPress recipe websites',
-      'Designed user-friendly interfaces for content discovery',
-      'Gained foundational web development experience'
+      'Mastered automation platforms and AI integration'
+    ]
+  },
+  {
+    id: 7,
+    year: '2021',
+    title: 'Herbalism Certification',
+    company: 'Artemisia Academy',
+    description: 'Certified in herbalism, leading to e-commerce business in natural products.',
+    highlights: [
+      'Launched successful e-commerce platform for herbal products'
     ]
   }
 ];

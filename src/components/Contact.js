@@ -36,7 +36,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com/in/danielle-lazzara"
+              href="https://www.linkedin.com/in/daniellelazzara/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

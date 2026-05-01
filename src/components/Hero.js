@@ -20,7 +20,7 @@ const Hero = () => {
             style={{ boxShadow: 'inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1)' }}
           >
             <HiSparkles className="text-slate-blue" />
-            <span className="text-sm font-semibold text-slate-blue">AI Automation Specialist</span>
+            <span className="text-sm font-semibold text-slate-blue">Automation &amp; Operations Specialist</span>
           </motion.div>
 
           <motion.h1
@@ -37,12 +37,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-3xl md:text-5xl font-bold tracking-tighter mb-8 text-slate-blue"
+            className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter leading-tight mb-8 text-slate-blue max-w-4xl mx-auto"
             style={{ letterSpacing: '-0.02em' }}
           >
-            Designing Scalable,
-            <span className="text-slate-blue"> AI-Powered </span>
-            Workflows
+            Automation &amp; Operations Specialist |
+            <span className="block sm:inline"> AI Workflows &amp; Integration (Python, n8n, React)</span>
           </motion.h2>
 
           <motion.p
@@ -51,10 +50,7 @@ const Hero = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-slate mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            I translate complex business requirements into durable, automated systems using{' '}
-            <span className="text-slate-blue font-semibold">Make</span>,{' '}
-            <span className="text-slate-blue font-semibold">Zapier</span>, and{' '}
-            <span className="text-slate-blue font-semibold">n8n</span>.
+            After years in clinical operations, I transitioned into AI automation to build smarter, more resilient systems. Through immersive technical training at TripleTen, I developed hands-on experience with Python, n8n, and React, and now focus on designing HIPAA-compliant digital workflows that improve reliability, efficiency, and care coordination.
           </motion.p>
 
           <motion.div

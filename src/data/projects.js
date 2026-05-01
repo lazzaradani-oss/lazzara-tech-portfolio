@@ -1,47 +1,38 @@
 export const projects = [
   {
     id: 1,
-    title: 'AI Problem Solver Simulator',
-    problem: 'Businesses often struggle to visualize how AI and automation can solve specific bottlenecks.',
-    solution: 'An interactive Python-based simulator built with Streamlit that takes user input and generates custom automation strategies using tools like Make.com and Gemini AI.',
+    title: 'AI Automation Simulator',
+    problem: 'Businesses struggle to quantify ROI for AI adoption in manual workflows.',
+    solution: 'Developed a Python-based diagnostic tool using Streamlit to quantify ROI for AI adoption, optimizing logic flows to provide 100% accurate tech stack recommendations.',
     value: 'Provides immediate, actionable technical roadmaps for business process optimization.',
     demoLink: 'https://lazzara-automation-simulator.streamlit.app/',
-    tags: ['Python', 'Streamlit', 'Gemini AI', 'Make.com', 'Interactive Demo']
+    tags: ['Python', 'Streamlit', 'Logic Modeling']
   },
   {
     id: 2,
-    title: 'Weather-Based Sales Automation',
-    problem: 'Retail businesses struggle to predict demand fluctuations based on weather patterns, leading to inventory inefficiencies and missed sales opportunities.',
-    solution: 'Built an automated workflow using Make.com that integrates weather APIs with Gemini AI to analyze historical sales data and current weather forecasts, generating actionable demand predictions.',
-    value: 'Reduced inventory waste by 30% and increased sales conversion during weather-sensitive periods by 25%.',
+    title: 'Weather-Based Sales & Staffing Automation',
+    problem: 'Retail businesses struggle to predict demand fluctuations based on weather patterns.',
+    solution: 'Designed a data-driven system integrating external weather data with internal sales metrics using Google Sheets and Gemini AI to predict demand, reducing operational risk through robust error handling and automated reporting.',
+    value: 'Reduces operational risk and improves demand prediction accuracy.',
     demoLink: 'https://gamma.app/docs/Automation-of-Weather-Based-Sales-and-Staffing-Decisions-ma97ay8pji1fd0z?mode=doc',
-    tags: ['Make.com', 'Gemini AI', 'Weather API', 'Predictive Analytics']
+    tags: ['Google Sheets', 'Gemini AI', 'Weather APIs']
   },
   {
     id: 3,
     title: 'Morning Light Studio - Wellness E-commerce',
-    problem: 'Service-based wellness businesses needed high-converting digital storefronts that could handle complex booking workflows and payment integrations.',
-    solution: 'Designed and implemented an end-to-end e-commerce solution using no-code/low-code platforms, integrating scheduling systems, payment gateways, and automated customer communications.',
-    value: 'Created a seamless booking experience for wellness services with integrated payment processing and automated appointment confirmations.',
+    problem: 'Wellness businesses needed high-converting digital storefronts with complex booking workflows.',
+    solution: 'Engineered a responsive React application using Lovable and Claude 3.5 Sonnet, focusing on a high-conversion "Patient Journey" funnel with Tailwind CSS and Shadcn UI for a calming, high-trust aesthetic.',
+    value: 'Created a seamless booking experience for wellness services with integrated payment processing.',
     demoLink: 'https://morning-light-studio.lovable.app/',
-    tags: ['E-commerce', 'UX Design', 'Payment Integration', 'Automation']
+    tags: ['React', 'Lovable', 'Tailwind CSS', 'Supabase']
   },
   {
     id: 4,
     title: 'Paws & Shine - Pet Grooming Platform',
-    problem: 'Pet grooming businesses needed modern digital storefronts that could handle service bookings and streamline customer interactions.',
-    solution: 'Built a complete e-commerce platform using no-code/low-code tools, featuring service catalogs, booking management, and customer communication automation.',
-    value: 'Delivered a user-friendly platform that simplified the booking process and improved customer engagement for pet care services.',
+    problem: 'Pet grooming businesses needed modern digital storefronts with service bookings.',
+    solution: 'Developed a service-centric application with Supabase backend for data storage, utilizing Midjourney and Adobe Firefly for brand assets and optimized for Local SEO.',
+    value: 'Simplified booking process and improved customer engagement for pet care services.',
     demoLink: 'https://pawsandshine.lovable.app/',
-    tags: ['E-commerce', 'UX Design', 'Booking System', 'Automation']
-  },
-  {
-    id: 5,
-    title: 'Automated AI Feedback Analysis',
-    problem: 'Organizations collecting customer feedback through Google Forms needed real-time sentiment analysis and actionable insights without manual data processing.',
-    solution: 'Created a Make.com pipeline that automatically processes Google Forms responses, performs sentiment analysis using AI, categorizes feedback, and routes critical issues to the appropriate teams via Slack and email.',
-    value: 'Reduced feedback processing time from 2 days to real-time, improving response rates to critical issues by 90% and customer satisfaction scores by 18%.',
-    demoLink: 'https://gamma.app/docs/Automated-Feedback-Analysis-Workflow-027w4jshs5bv4an?mode=doc',
-    tags: ['Make.com', 'Google Forms', 'Sentiment Analysis', 'AI Integration']
+    tags: ['React', 'Supabase', 'Midjourney', 'Adobe Firefly']
   }
 ];

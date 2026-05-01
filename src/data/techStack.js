@@ -1,4 +1,4 @@
-import { SiMake, SiZapier, SiPython, SiOpenai } from 'react-icons/si';
+import { SiMake, SiZapier, SiPython, SiOpenai, SiReact, SiGithub, SiNetlify } from 'react-icons/si';
 import { TbBrandGoogleBigQuery } from 'react-icons/tb';
 import { FaRobot, FaDatabase } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
@@ -10,6 +10,9 @@ export const techStack = [
   { name: 'UiPath', icon: FaDatabase, color: '#FA4616' },
   { name: 'Gemini AI', icon: HiSparkles, color: '#4285F4' },
   { name: 'OpenAI', icon: SiOpenai, color: '#10A37F' },
-  { name: 'Python/JSON', icon: SiPython, color: '#3776AB' },
+  { name: 'Python', icon: SiPython, color: '#3776AB' },
+  { name: 'React.js', icon: SiReact, color: '#61DAFB' },
+  { name: 'GitHub', icon: SiGithub, color: '#181717' },
+  { name: 'Netlify', icon: SiNetlify, color: '#00C46A' },
   { name: 'HubSpot', icon: TbBrandGoogleBigQuery, color: '#FF7A59' },
 ];
