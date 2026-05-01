@@ -6,7 +6,13 @@ export const projects = [
     solution: 'Developed a Python-based diagnostic tool using Streamlit to quantify ROI for AI adoption, optimizing logic flows to provide 100% accurate tech stack recommendations.',
     value: 'Provides immediate, actionable technical roadmaps for business process optimization.',
     demoLink: 'https://lazzara-automation-simulator.streamlit.app/',
-    tags: ['Python', 'Streamlit', 'Logic Modeling']
+    tags: ['Python', 'Streamlit', 'Logic Modeling'],
+    logicHighlights: [
+      'Input Processing Node - Parses user workflow descriptions',
+      'AI Recommendation Engine - Analyzes pain points and suggests tools',
+      'Logic Flow Optimizer - Maps business processes to automation strategies',
+      'Output Formatter - Generates actionable implementation guides'
+    ]
   },
   {
     id: 2,
@@ -15,7 +21,13 @@ export const projects = [
     solution: 'Designed a data-driven system integrating external weather data with internal sales metrics using Google Sheets and Gemini AI to predict demand, reducing operational risk through robust error handling and automated reporting.',
     value: 'Reduces operational risk and improves demand prediction accuracy.',
     demoLink: 'https://gamma.app/docs/Automation-of-Weather-Based-Sales-and-Staffing-Decisions-ma97ay8pji1fd0z?mode=doc',
-    tags: ['Google Sheets', 'Gemini AI', 'Weather APIs']
+    tags: ['Google Sheets', 'Gemini AI', 'Weather APIs'],
+    logicHighlights: [
+      'Weather API Integration - Fetches real-time weather data',
+      'Data Aggregation Node - Combines weather with historical sales',
+      'AI Prediction Engine - Uses Gemini to forecast demand',
+      'Automated Reporting - Sends alerts via Slack and email'
+    ]
   },
   {
     id: 3,
@@ -24,7 +36,13 @@ export const projects = [
     solution: 'Engineered a responsive React application using Lovable and Claude 3.5 Sonnet, focusing on a high-conversion "Patient Journey" funnel with Tailwind CSS and Shadcn UI for a calming, high-trust aesthetic.',
     value: 'Created a seamless booking experience for wellness services with integrated payment processing.',
     demoLink: 'https://morning-light-studio.lovable.app/',
-    tags: ['React', 'Lovable', 'Tailwind CSS', 'Supabase']
+    tags: ['React', 'Lovable', 'Tailwind CSS', 'Supabase'],
+    logicHighlights: [
+      'Patient Journey Funnel - Guides users through booking process',
+      'Service Catalog Display - Dynamic rendering of wellness services',
+      'Payment Integration - Secure Stripe/Stripe-like processing',
+      'Appointment Scheduling - Real-time availability and confirmation'
+    ]
   },
   {
     id: 4,
@@ -33,6 +51,12 @@ export const projects = [
     solution: 'Developed a service-centric application with Supabase backend for data storage, utilizing Midjourney and Adobe Firefly for brand assets and optimized for Local SEO.',
     value: 'Simplified booking process and improved customer engagement for pet care services.',
     demoLink: 'https://pawsandshine.lovable.app/',
-    tags: ['React', 'Supabase', 'Midjourney', 'Adobe Firefly']
+    tags: ['React', 'Supabase', 'Midjourney', 'Adobe Firefly'],
+    logicHighlights: [
+      'Service Booking Flow - Streamlined appointment scheduling',
+      'Customer Profile Management - Stores pet and owner details',
+      'Automated Confirmations - Email/SMS notifications',
+      'SEO Optimization - Local search visibility enhancements'
+    ]
   }
 ];
