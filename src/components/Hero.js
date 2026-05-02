@@ -50,7 +50,7 @@ const Hero = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="text-xl md:text-2xl text-slate-100 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            After years in clinical operations, I transitioned into AI automation to build smarter, more resilient systems. Through immersive technical training at TripleTen, I developed hands-on experience with Python, n8n, and React, and now focus on designing HIPAA-compliant digital workflows that improve reliability, efficiency, and care coordination.
+            I'm a technical specialist driven by human connection. Currently working with autistic children in the ABA field, I apply deep behavioral insights to design intelligent systems that actually work for real people. My expertise in Python, React, and AI automation is grounded in understanding how humans think, learn, and interact—insights that translate into smarter workflows, ethical AI solutions, and technology that serves its users with precision and care.
           </motion.p>
 
           <motion.div
