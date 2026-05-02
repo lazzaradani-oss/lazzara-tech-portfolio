@@ -7,12 +7,8 @@ export const projects = [
     value: 'Provides immediate, actionable technical roadmaps for business process optimization.',
     demoLink: 'https://lazzara-automation-simulator.streamlit.app/',
     tags: ['Python', 'Streamlit', 'Logic Modeling'],
-    logicHighlights: [
-      'Input Processing Node - Parses user workflow descriptions',
-      'AI Recommendation Engine - Analyzes pain points and suggests tools',
-      'Logic Flow Optimizer - Maps business processes to automation strategies',
-      'Output Formatter - Generates actionable implementation guides'
-    ]
+    technicalDeepDive: 'Built with Python and Streamlit for rapid prototyping. Features input processing nodes that parse user workflow descriptions, an AI recommendation engine using pattern matching algorithms, logic flow optimizers that map business processes to automation strategies, and output formatters that generate implementation guides.',
+    promptStrategy: 'Used structured prompts for AI analysis: "Analyze this workflow bottleneck and recommend Make.com scenarios with success metrics." Enabled precise tool recommendations based on user input patterns.'
   },
   {
     id: 2,
@@ -22,12 +18,8 @@ export const projects = [
     value: 'Reduces operational risk and improves demand prediction accuracy.',
     demoLink: 'https://gamma.app/docs/Automation-of-Weather-Based-Sales-and-Staffing-Decisions-ma97ay8pji1fd0z?mode=doc',
     tags: ['Google Sheets', 'Gemini AI', 'Weather APIs'],
-    logicHighlights: [
-      'Weather API Integration - Fetches real-time weather data',
-      'Data Aggregation Node - Combines weather with historical sales',
-      'AI Prediction Engine - Uses Gemini to forecast demand',
-      'Automated Reporting - Sends alerts via Slack and email'
-    ]
+    technicalDeepDive: 'Integrates OpenWeatherMap API with Google Sheets formulas. Uses Gemini AI for predictive analytics, combining historical sales data with real-time weather forecasts. Implements error handling for API failures and automated Slack notifications for demand alerts.',
+    promptStrategy: 'Prompt engineering focused on data correlation: "Given weather pattern X and historical sales Y, predict demand Z with confidence intervals." Optimized for retail scenarios with seasonal adjustments.'
   },
   {
     id: 3,
@@ -37,12 +29,8 @@ export const projects = [
     value: 'Created a seamless booking experience for wellness services with integrated payment processing.',
     demoLink: 'https://morning-light-studio.lovable.app/',
     tags: ['React', 'Lovable', 'Tailwind CSS', 'Supabase'],
-    logicHighlights: [
-      'Patient Journey Funnel - Guides users through booking process',
-      'Service Catalog Display - Dynamic rendering of wellness services',
-      'Payment Integration - Secure Stripe/Stripe-like processing',
-      'Appointment Scheduling - Real-time availability and confirmation'
-    ]
+    technicalDeepDive: 'React application with Supabase backend for real-time data. Implements patient journey funnels with conditional rendering, secure payment processing via Stripe integration, and appointment scheduling with availability checking. Uses behavioral psychology principles for UI design.',
+    promptStrategy: 'UI/UX prompts for wellness design: "Design a calming booking interface that reduces anxiety and increases conversion using behavioral psychology principles." Generated component structures and styling recommendations.'
   },
   {
     id: 4,
@@ -52,11 +40,7 @@ export const projects = [
     value: 'Simplified booking process and improved customer engagement for pet care services.',
     demoLink: 'https://pawsandshine.lovable.app/',
     tags: ['React', 'Supabase', 'Midjourney', 'Adobe Firefly'],
-    logicHighlights: [
-      'Service Booking Flow - Streamlined appointment scheduling',
-      'Customer Profile Management - Stores pet and owner details',
-      'Automated Confirmations - Email/SMS notifications',
-      'SEO Optimization - Local search visibility enhancements'
-    ]
+    technicalDeepDive: 'Service booking platform with React frontend and Supabase database. Features customer profile management with pet details, automated email/SMS confirmations, and local SEO optimization. Integrates AI-generated brand assets and implements responsive design for mobile booking.',
+    promptStrategy: 'Asset generation prompts: "Create pet grooming brand imagery with warm, trustworthy colors and playful elements." SEO prompts: "Optimize this page for local pet grooming services in [city] with schema markup."'
   }
 ];
