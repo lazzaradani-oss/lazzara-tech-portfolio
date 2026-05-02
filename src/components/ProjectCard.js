@@ -16,7 +16,7 @@ const ProjectCard = ({ title, problem, solution, value, tags, demoLink, technica
     >
       <div className="p-8">
         <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
-          <h3 className="text-2xl font-bold text-gray-900">
+          <h3 className="text-2xl font-bold text-white">
             {title}
           </h3>
           {demoLink && (
@@ -38,7 +38,7 @@ const ProjectCard = ({ title, problem, solution, value, tags, demoLink, technica
             <h4 className="text-accent-primary font-bold text-sm uppercase tracking-wide mb-2">
               Problem
             </h4>
-            <p className="text-gray-800 leading-relaxed">
+            <p className="text-slate-100 leading-relaxed">
               {problem}
             </p>
           </div>
@@ -47,7 +47,7 @@ const ProjectCard = ({ title, problem, solution, value, tags, demoLink, technica
             <h4 className="text-accent-secondary font-bold text-sm uppercase tracking-wide mb-2">
               Solution
             </h4>
-            <p className="text-gray-800 leading-relaxed">
+            <p className="text-slate-100 leading-relaxed">
               {solution}
             </p>
           </div>
@@ -57,7 +57,7 @@ const ProjectCard = ({ title, problem, solution, value, tags, demoLink, technica
               <h4 className="text-green-600 font-bold text-sm uppercase tracking-wide mb-2">
                 Value
               </h4>
-              <p className="text-gray-800 leading-relaxed">
+              <p className="text-slate-100 leading-relaxed">
                 {value}
               </p>
             </div>
@@ -91,7 +91,7 @@ const ProjectCard = ({ title, problem, solution, value, tags, demoLink, technica
                       <h5 className="text-accent-primary font-bold text-xs uppercase tracking-wide mb-1">
                         Technical Deep Dive
                       </h5>
-                      <p className="text-gray-700 text-sm leading-relaxed">
+                      <p className="text-slate-100 text-sm leading-relaxed">
                         {technicalDeepDive}
                       </p>
                     </div>
@@ -101,7 +101,7 @@ const ProjectCard = ({ title, problem, solution, value, tags, demoLink, technica
                       <h5 className="text-accent-primary font-bold text-xs uppercase tracking-wide mb-1">
                         Prompt Strategy
                       </h5>
-                      <p className="text-gray-700 text-sm leading-relaxed">
+                      <p className="text-slate-100 text-sm leading-relaxed">
                         {promptStrategy}
                       </p>
                     </div>

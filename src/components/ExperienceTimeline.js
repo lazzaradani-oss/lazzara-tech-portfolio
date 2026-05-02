@@ -14,12 +14,12 @@ const ExperienceTimeline = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-slate-blue"
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-white"
             style={{ letterSpacing: '-0.02em' }}
           >
             My Journey
           </h2>
-          <p className="text-muted-slate text-lg max-w-2xl mx-auto">
+          <p className="text-slate-100 text-lg max-w-2xl mx-auto">
             From logistics and customer care to AI-powered automation specialist
           </p>
         </motion.div>
@@ -51,15 +51,15 @@ const ExperienceTimeline = () => {
                     {exp.year}
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold tracking-tighter text-slate-blue mb-2"
+                <h3 className="text-2xl font-bold tracking-tighter text-white mb-2"
                   style={{ letterSpacing: '-0.02em' }}
                 >
                   {exp.title}
                 </h3>
-                <p className="text-slate-blue font-semibold mb-3">
+                <p className="text-white font-semibold mb-3">
                   {exp.company}
                 </p>
-                <p className="text-muted-slate mb-4 leading-relaxed">
+                <p className="text-slate-100 mb-4 leading-relaxed">
                   {exp.description}
                 </p>
                 <ul className={`space-y-2 ${index % 2 === 0 ? 'md:items-end' : 'md:items-start'}`}>
@@ -70,7 +70,7 @@ const ExperienceTimeline = () => {
                         index % 2 === 0 ? 'md:flex-row-reverse md:text-right' : ''
                       }`}
                     >
-                      <HiCheckCircle className="text-slate-blue text-xl flex-shrink-0 mt-0.5" />
+                      <HiCheckCircle className="text-white text-xl flex-shrink-0 mt-0.5" />
                       <span className="text-sm font-medium">{highlight}</span>
                     </li>
                   ))}

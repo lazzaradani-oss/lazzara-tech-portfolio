@@ -13,12 +13,12 @@ const TechStack = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-slate-blue"
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-white"
             style={{ letterSpacing: '-0.02em' }}
           >
             Tech Stack
           </h2>
-          <p className="text-muted-slate text-lg max-w-2xl mx-auto">
+          <p className="text-slate-100 text-lg max-w-2xl mx-auto">
             Tools and platforms I use to build intelligent automation solutions
           </p>
         </motion.div>
@@ -47,7 +47,7 @@ const TechStack = () => {
                 >
                   <Icon />
                 </div>
-                <h3 className="text-slate-blue font-semibold text-lg text-center">
+                <h3 className="text-white font-semibold text-lg text-center">
                   {tech.name}
                 </h3>
               </motion.div>

@@ -15,12 +15,12 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 text-slate-blue"
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 text-white"
             style={{ letterSpacing: '-0.02em' }}
           >
             Let's Build Something Great
           </h2>
-          <p className="text-muted-slate text-lg mb-12">
+          <p className="text-slate-100 text-lg mb-12">
             Ready to automate your workflows and scale your business? Let's connect and discuss how I can help.
           </p>
 
@@ -41,7 +41,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white/40 backdrop-blur-[24px] border-[1.5px] border-white/60 hover:border-white/80 text-slate-blue rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white/40 backdrop-blur-[24px] border-[1.5px] border-white/60 hover:border-white/80 text-white rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto justify-center"
               style={{ boxShadow: 'inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1)' }}
             >
               <FaLinkedin className="text-2xl text-[#0A66C2]" />
@@ -54,7 +54,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white/40 backdrop-blur-[24px] border-[1.5px] border-white/60 hover:border-white/80 text-slate-blue rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white/40 backdrop-blur-[24px] border-[1.5px] border-white/60 hover:border-white/80 text-white rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto justify-center"
               style={{ boxShadow: 'inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1)' }}
             >
               <FaGithub className="text-2xl" />
@@ -67,7 +67,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white/40 backdrop-blur-[24px] border-[1.5px] border-white/60 hover:border-white/80 text-slate-blue rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white/40 backdrop-blur-[24px] border-[1.5px] border-white/60 hover:border-white/80 text-white rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto justify-center"
               style={{ boxShadow: 'inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1)' }}
             >
               <HiShoppingCart className="text-2xl" />
@@ -80,7 +80,7 @@ const Contact = () => {
       {/* Footer */}
       <div className="border-t border-white/30 mt-20 pt-8">
         <div className="container mx-auto px-6">
-          <div className="text-center text-muted-slate">
+          <div className="text-center text-slate-100">
             <p className="mb-2 font-medium">
               © 2026 Danielle Lazzara. All rights reserved.
             </p>

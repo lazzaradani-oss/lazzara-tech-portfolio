@@ -23,12 +23,12 @@ const ProjectShowcase = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-slate-blue"
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-white"
             style={{ letterSpacing: '-0.02em' }}
           >
             Featured Projects
           </h2>
-          <p className="text-muted-slate text-lg max-w-2xl mx-auto">
+          <p className="text-slate-100 text-lg max-w-2xl mx-auto">
             Real-world automation solutions delivering measurable business value
           </p>
         </motion.div>
@@ -48,7 +48,7 @@ const ProjectShowcase = () => {
             >
               <div className="p-6 md:p-8 h-full flex flex-col">
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6">
-                  <h3 className="text-xl md:text-2xl font-bold tracking-tighter text-slate-blue"
+                  <h3 className="text-xl md:text-2xl font-bold tracking-tighter text-white"
                     style={{ letterSpacing: '-0.02em' }}
                   >
                     {project.title}
@@ -67,28 +67,28 @@ const ProjectShowcase = () => {
 
                 <div className="space-y-3 mb-4 flex-grow">
                   <div className="bg-white/30 backdrop-blur-[12px] border border-white/50 rounded-2xl p-4">
-                    <h4 className="text-slate-blue font-bold text-xs uppercase tracking-wide mb-2">
+                    <h4 className="text-white font-bold text-xs uppercase tracking-wide mb-2">
                       Problem
                     </h4>
-                    <p className="text-muted-slate leading-relaxed text-sm">
+                    <p className="text-slate-100 leading-relaxed text-sm">
                       {project.problem}
                     </p>
                   </div>
 
                   <div className="bg-white/30 backdrop-blur-[12px] border border-white/50 rounded-2xl p-4">
-                    <h4 className="text-slate-blue font-bold text-xs uppercase tracking-wide mb-2">
+                    <h4 className="text-white font-bold text-xs uppercase tracking-wide mb-2">
                       Solution
                     </h4>
-                    <p className="text-muted-slate leading-relaxed text-sm">
+                    <p className="text-slate-100 leading-relaxed text-sm">
                       {project.solution}
                     </p>
                   </div>
 
                   <div className="bg-white/30 backdrop-blur-[12px] border border-white/50 rounded-2xl p-4">
-                    <h4 className="text-slate-blue font-bold text-xs uppercase tracking-wide mb-2">
+                    <h4 className="text-white font-bold text-xs uppercase tracking-wide mb-2">
                       Value
                     </h4>
-                    <p className="text-muted-slate leading-relaxed text-sm">
+                    <p className="text-slate-100 leading-relaxed text-sm">
                       {project.value}
                     </p>
                   </div>
@@ -100,11 +100,11 @@ const ProjectShowcase = () => {
                     onClick={() => toggleAccordion(project.id)}
                     className="w-full flex items-center justify-between p-3 bg-white/20 backdrop-blur-sm border border-white/40 rounded-xl hover:bg-white/30 transition-colors"
                   >
-                    <span className="text-slate-blue font-semibold text-sm">Technical Specs</span>
+                    <span className="text-white font-semibold text-sm">Technical Specs</span>
                     {openAccordions[project.id] ? (
-                      <HiChevronUp className="text-slate-blue text-lg" />
+                      <HiChevronUp className="text-white text-lg" />
                     ) : (
-                      <HiChevronDown className="text-slate-blue text-lg" />
+                      <HiChevronDown className="text-white text-lg" />
                     )}
                   </button>
                   {openAccordions[project.id] && (
@@ -116,18 +116,18 @@ const ProjectShowcase = () => {
                     >
                       <div className="space-y-3">
                         <div>
-                          <h5 className="text-slate-blue font-bold text-xs uppercase tracking-wide mb-1">
+                          <h5 className="text-white font-bold text-xs uppercase tracking-wide mb-1">
                             Technical Deep Dive
                           </h5>
-                          <p className="text-muted-slate text-sm leading-relaxed">
+                          <p className="text-slate-100 text-sm leading-relaxed">
                             {project.technicalDeepDive}
                           </p>
                         </div>
                         <div>
-                          <h5 className="text-slate-blue font-bold text-xs uppercase tracking-wide mb-1">
+                          <h5 className="text-white font-bold text-xs uppercase tracking-wide mb-1">
                             Prompt Strategy
                           </h5>
-                          <p className="text-muted-slate text-sm leading-relaxed">
+                          <p className="text-slate-100 text-sm leading-relaxed">
                             {project.promptStrategy}
                           </p>
                         </div>
