@@ -1,0 +1,91 @@
+/* 1. THE MAIN CONTAINER */
+.cosmos-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Transparent so StarryBackground.js shows through */
+  background: transparent; 
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* 2. THE NODES (Mars and Aries Stars) */
+.node-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* This ensures the node is centered exactly on its coordinate */
+  transform: translate(-50%, -50%); 
+  z-index: 20;
+}
+
+.glow-star {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.node-label {
+  color: #e0f7fa;
+  margin-top: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+  white-space: nowrap;
+}
+
+/* 3. THE PROJECT CARDS (Cyber-Card) */
+.cyber-card {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  width: 90%;
+  max-width: 340px;
+  padding: 1.5rem;
+  
+  /* THE "FROST" EFFECT: 70% dark blue tint with 12px blur */
+  background: rgba(5, 10, 21, 0.7); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  
+  /* ELECTRIC EDGES */
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+  border-radius: 12px;
+}
+
+.cyber-card h3 {
+  color: #00ffff;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.tech-stack span {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: #00ffff;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+}
+
+/* 4. MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .glow-star { width: 8px; height: 8px; }
+  .node-label { font-size: 0.7rem; }
+  .cyber-card { bottom: 5%; max-width: 280px; }
+}

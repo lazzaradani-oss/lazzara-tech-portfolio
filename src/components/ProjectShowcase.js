@@ -1,157 +1,95 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { HiExternalLink, HiChevronDown, HiChevronUp } from 'react-icons/hi';
-import { projects } from '../data/projects';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiExternalLink, HiChevronDown, HiChevronUp } from "react-icons/hi";
 
-const ProjectShowcase = () => {
-  const [openAccordions, setOpenAccordions] = useState({});
+const ProjectShowcase = ({ activeProject, data }) => {
+  const [openSpecs, setOpenSpecs] = useState({});
+  if (!data) return null;
 
-  const toggleAccordion = (projectId) => {
-    setOpenAccordions(prev => ({
-      ...prev,
-      [projectId]: !prev[projectId]
-    }));
+  const toggleSpecs = (index) => {
+    setOpenSpecs((prev) => ({ ...prev, [index]: !prev[index] }));
   };
 
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-white"
-            style={{ letterSpacing: '-0.02em' }}
-          >
-            Featured Projects
-          </h2>
-          <p className="text-slate-100 text-lg max-w-2xl mx-auto">
-            Real-world automation solutions delivering measurable business value
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              whileHover={{ scale: 1.02 }}
-              className="bg-white/40 backdrop-blur-[24px] border-[1.5px] border-white/60 rounded-3xl overflow-hidden 
-                transition-all duration-300 hover:border-white/80"
-              style={{ boxShadow: 'inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1)' }}
-            >
-              <div className="p-6 md:p-8 h-full flex flex-col">
-                <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6">
-                  <h3 className="text-xl md:text-2xl font-bold tracking-tighter text-white"
-                    style={{ letterSpacing: '-0.02em' }}
-                  >
-                    {project.title}
-                  </h3>
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-400/50 whitespace-nowrap text-sm border-b-2 border-cyan-300"
-                    style={{ textShadow: '0 0 10px rgba(34, 211, 238, 0.5)' }}
-                  >
-                    <HiExternalLink className="text-lg" />
-                    View Live Logic
-                  </a>
-                </div>
-
-                <div className="space-y-3 mb-4 flex-grow">
-                  <div className="bg-white/30 backdrop-blur-[12px] border border-white/50 rounded-2xl p-4">
-                    <h4 className="text-white font-bold text-xs uppercase tracking-wide mb-2">
-                      Problem
-                    </h4>
-                    <p className="text-slate-100 leading-relaxed text-sm">
-                      {project.problem}
-                    </p>
-                  </div>
-
-                  <div className="bg-white/30 backdrop-blur-[12px] border border-white/50 rounded-2xl p-4">
-                    <h4 className="text-white font-bold text-xs uppercase tracking-wide mb-2">
-                      Solution
-                    </h4>
-                    <p className="text-slate-100 leading-relaxed text-sm">
-                      {project.solution}
-                    </p>
-                  </div>
-
-                  <div className="bg-white/30 backdrop-blur-[12px] border border-white/50 rounded-2xl p-4">
-                    <h4 className="text-white font-bold text-xs uppercase tracking-wide mb-2">
-                      Value
-                    </h4>
-                    <p className="text-slate-100 leading-relaxed text-sm">
-                      {project.value}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Technical Specs Accordion */}
-                <div className="mb-4">
-                  <button
-                    onClick={() => toggleAccordion(project.id)}
-                    className="w-full flex items-center justify-between p-3 bg-white/20 backdrop-blur-sm border border-white/40 rounded-xl hover:bg-white/30 transition-colors"
-                  >
-                    <span className="text-white font-semibold text-sm">Technical Specs</span>
-                    {openAccordions[project.id] ? (
-                      <HiChevronUp className="text-white text-lg" />
-                    ) : (
-                      <HiChevronDown className="text-white text-lg" />
-                    )}
-                  </button>
-                  {openAccordions[project.id] && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      className="mt-2 p-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-xl"
-                    >
-                      <div className="space-y-3">
-                        <div>
-                          <h5 className="text-white font-bold text-xs uppercase tracking-wide mb-1">
-                            Technical Deep Dive
-                          </h5>
-                          <p className="text-slate-100 text-sm leading-relaxed">
-                            {project.technicalDeepDive}
-                          </p>
-                        </div>
-                        <div>
-                          <h5 className="text-white font-bold text-xs uppercase tracking-wide mb-1">
-                            Prompt Strategy
-                          </h5>
-                          <p className="text-slate-100 text-sm leading-relaxed">
-                            {project.promptStrategy}
-                          </p>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </div>
-
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 bg-white/30 border border-white/50 text-slate-blue rounded-full text-xs font-medium"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+    <div className="max-w-6xl mx-auto bg-transparent">
+      <div className="mb-12 border-b border-[#ff7e5f]/30 pb-6">
+        <span className="text-[10px] text-[#ff7e5f] font-mono tracking-[0.3em] uppercase">
+          Node_Selected: {activeProject}
+        </span>
+        <h1 className="text-4xl md:text-5xl font-bold text-white mt-2 font-mono uppercase italic">
+          _{data.title}
+        </h1>
       </div>
-    </section>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {data.projects.map((project, index) => (
+          <motion.div
+            key={index}
+            className="group relative bg-[#0a1425]/40 border border-[#a5b4fc]/10 p-8 rounded-2xl backdrop-blur-md shadow-2xl transition-all hover:border-[#ff7e5f]/50"
+          >
+            <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#a5b4fc]/20 group-hover:bg-[#ff7e5f]" />
+            <div className="flex justify-between items-start mb-6 gap-4">
+              <h3 className="text-xl md:text-2xl font-bold text-white font-mono uppercase leading-tight">
+                {project.name}
+              </h3>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-3 py-2 border border-[#ff7e5f] text-[#ff7e5f] rounded-lg font-mono text-[10px] uppercase hover:bg-[#ff7e5f] hover:text-white transition-all"
+              >
+                <HiExternalLink className="text-sm" /> Live_Logic
+              </a>
+            </div>
+
+            <div className="space-y-3 mb-6">
+              <div className="bg-black/30 p-4 rounded-xl border border-white/5">
+                <h4 className="text-[#ff7e5f] font-bold text-[9px] uppercase tracking-widest mb-1">
+                  01_PROBLEM
+                </h4>
+                <p className="text-gray-300 text-xs">{project.problem}</p>
+              </div>
+              <div className="bg-black/30 p-4 rounded-xl border border-white/5">
+                <h4 className="text-[#a5b4fc] font-bold text-[9px] uppercase tracking-widest mb-1">
+                  02_SOLUTION
+                </h4>
+                <p className="text-gray-300 text-xs">{project.solution}</p>
+              </div>
+              <div className="bg-black/30 p-4 rounded-xl border border-white/5">
+                <h4 className="text-emerald-400 font-bold text-[9px] uppercase tracking-widest mb-1">
+                  03_VALUE
+                </h4>
+                <p className="text-gray-300 text-xs">{project.value}</p>
+              </div>
+            </div>
+
+            <button
+              onClick={() => toggleSpecs(index)}
+              className="w-full flex items-center justify-between p-3 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors"
+            >
+              <span className="text-[#a5b4fc] font-mono text-[10px] uppercase tracking-widest">
+                Technical_Specs
+              </span>
+              {openSpecs[index] ? <HiChevronUp /> : <HiChevronDown />}
+            </button>
+            <AnimatePresence>
+              {openSpecs[index] && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  className="mt-2 overflow-hidden bg-black/60 p-4 border border-[#ff7e5f]/20 rounded-xl"
+                >
+                  <p className="text-[#ff7e5f] font-mono text-[10px] leading-relaxed italic uppercase">
+                    {project.specs}
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        ))}
+      </div>
+    </div>
   );
 };
 

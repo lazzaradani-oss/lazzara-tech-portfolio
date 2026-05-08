@@ -1,0 +1,28 @@
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* Allows StarryBackground to show through */
+  color: #e0f7fa;
+  padding: 40px;
+}
+
+.about-content {
+  max-width: 700px;
+  text-align: center;
+  /* Glassmorphism for the About section */
+  background: rgba(10, 25, 47, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.accent-line {
+  width: 60px;
+  height: 3px;
+  background: #00ffff;
+  margin: 20px auto;
+  box-shadow: 0 0 10px #00ffff;
+}

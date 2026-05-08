@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Persistent Layout */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
   color: white;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+/* Custom Music Vinyl Animation */
+@keyframes vinyl-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Base spin for all records */
+.animate-vinyl {
+  animation: vinyl-spin 12s linear infinite;
+}
+
+/* Faster spin when the sample is active */
+.animate-vinyl.playing {
+  animation: vinyl-spin 4s linear infinite;
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.4); /* Cyan glow when playing */
+}
+
+/* Pause the spin on hover so people can read the label, 
+   UNLESS the song is actually playing */
+.group:hover .animate-vinyl:not(.playing) {
+  animation-play-state: paused;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
