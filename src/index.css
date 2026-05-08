@@ -9,8 +9,8 @@ body {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #D1F5E9 0%, #FDE6D2 100%);
-  background-attachment: fixed;
+  /* FIX: Changed from light gradient to deep black for Cybercore visibility */
+  background-color: #000000; 
   color: #64748B;
   position: relative;
   overflow-x: hidden;
@@ -19,4 +19,25 @@ body {
 
 * {
   scroll-behavior: smooth;
+}
+
+/* --- Glitch Core Art Styles --- */
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes chromaticShift {
+  0% { filter: contrast(110%) saturate(120%) hue-rotate(0deg) blur(0.5px) url(#cyberNoise); }
+  33% { filter: contrast(120%) saturate(140%) hue-rotate(1deg) blur(0.6px) url(#cyberNoise); }
+  66% { filter: contrast(110%) saturate(120%) hue-rotate(-1deg) blur(0.5px) url(#cyberNoise); }
+  100% { filter: contrast(110%) saturate(120%) hue-rotate(0deg) blur(0.5px) url(#cyberNoise); }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-chromatic {
+  animation: chromaticShift 0.15s ease-in-out infinite;
 }
