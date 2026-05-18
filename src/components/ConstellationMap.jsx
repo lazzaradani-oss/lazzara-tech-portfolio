@@ -1,56 +1,46 @@
-import React from "react";
-import { motion } from "framer-motion";
-import MarsPlanet from "./MarsPlanet";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const ConstellationMap = ({ setView }) => {
-  const projects = [
-    { id: "hamal", name: "HAMAL", top: "25%", left: "60%" },
-    { id: "sheratan", name: "SHERATAN", top: "45%", left: "65%" },
-    { id: "mesarthim", name: "MESARTHIM", top: "65%", left: "60%" },
+  // Synchronized node array matching your App.js uppercase routing constants
+  const nodes = [
+    { id: "IDENTITY_DESIGN", label: "IDENTITY_DESIGN", color: "#ff6b6b", x: "23%", y: "30%" },
+    { id: "STUDIO_CRAFT", label: "STUDIO_CRAFT", color: "#00d2ff", x: "71%", y: "41%" },
+    { id: "BLUE_JAY_UX", label: "BLUE_JAY_UX", color: "#ffffff", x: "43%", y: "61%" },
+    { id: "AI_SIMULATOR", label: "AI_SIMULATOR", color: "#ffffff", x: "62%", y: "76%" },
+    { id: "STUDIO_SOUND", label: "STUDIO_SOUND", color: "#ec4899", x: "80%", y: "22%" }
   ];
 
   return (
-    <div className="relative w-full h-full bg-transparent">
-      {/* Mars/Origin Node */}
-      <MarsPlanet setView={setView} />
-
-      {/* Project Star Nodes */}
-      {projects.map((proj) => (
+    <div className="relative w-full h-screen bg-transparent overflow-hidden">
+      {/* Interactive Star Nodes */}
+      {nodes.map((node) => (
         <motion.div
-          key={proj.id}
-          className="absolute flex flex-col items-center cursor-pointer group"
-          style={{ top: proj.top, left: proj.left }}
-          onClick={() => setView(proj.id)}
-          whileHover={{ scale: 1.2 }}
+          key={node.id}
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.2, filter: "brightness(1.5)" }}
+          onClick={() => setView(node.id)}
+          style={{ left: node.x, top: node.y, backgroundColor: node.color }}
+          className="absolute w-5 h-5 rounded-full cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.6)] flex items-center justify-center group z-10 -translate-x-1/2 -translate-y-1/2"
         >
-          <div className="w-3 h-3 bg-white rounded-full shadow-[0_0_15px_rgba(255,255,255,0.8)] group-hover:bg-cyan-400 group-hover:shadow-[0_0_20px_#22d3ee]" />
-          <span className="text-[10px] text-slate-400 font-mono mt-2 tracking-widest group-hover:text-cyan-400 transition-colors">
-            {proj.name}
+          {/* Strict Text Labels matching your upgraded resume terminology */}
+          <span className="absolute top-8 font-mono text-[11px] tracking-widest text-slate-400 uppercase group-hover:text-cyan-400 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap select-none">
+            {node.id === "IDENTITY_DESIGN" ? "IDENTITY_DESIGN" : node.label}
           </span>
         </motion.div>
       ))}
 
-      {/* Music Nebula Portal: Pulsing on the side */}
-      <motion.div
-        className="absolute bottom-[10%] right-[5%] cursor-pointer group flex flex-col items-center"
-        onClick={() => setView("music-galaxy")}
-        animate={{
-          scale: [1, 1.05, 1],
-          filter: [
-            "drop-shadow(0 0 5px #7a00ff)",
-            "drop-shadow(0 0 20px #7a00ff)",
-            "drop-shadow(0 0 5px #7a00ff)",
-          ],
-        }}
-        transition={{ duration: 3, repeat: Infinity }}
-      >
-        <div className="w-12 h-12 rounded-full border border-purple-500/50 flex items-center justify-center bg-purple-900/10 backdrop-blur-sm">
-          <div className="w-2 h-2 bg-purple-400 rounded-full animate-ping" />
-        </div>
-        <span className="text-[9px] text-purple-300 font-mono mt-2 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-tighter">
-          Creative_Nebula
-        </span>
-      </motion.div>
+      {/* SVG Path Streams connecting the architecture layers */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-30">
+        {/* Core River Path Routing */}
+        <line x1="23%" y1="30%" x2="43%" y2="61%" stroke="white" strokeWidth="1.5" />
+        <line x1="43%" y1="61%" x2="62%" y2="76%" stroke="white" strokeWidth="1.5" />
+        <line x1="62%" y1="76%" x2="71%" y2="41%" stroke="white" strokeWidth="1.5" />
+        
+        {/* Generative Nebula Audio Loop Stream */}
+        <line x1="71%" y1="41%" x2="80%" y2="22%" stroke="#ec4899" strokeWidth="1" strokeDasharray="4" className="animate-pulse" />
+      </svg>
     </div>
   );
 };
