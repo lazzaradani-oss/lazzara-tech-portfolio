@@ -12,7 +12,7 @@ const ConstellationMap = ({ setView }) => {
   ];
 
   return (
-    <div className="relative w-full h-screen bg-transparent overflow-hidden">
+    <div className="relative w-full h-screen bg-[#030303] overflow-hidden">
       {/* Interactive Star Nodes */}
       {nodes.map((node) => (
         <motion.div
@@ -25,14 +25,14 @@ const ConstellationMap = ({ setView }) => {
           className="absolute w-5 h-5 rounded-full cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.6)] flex items-center justify-center group z-10 -translate-x-1/2 -translate-y-1/2"
         >
           {/* Strict Text Labels matching your upgraded resume terminology */}
-          <span className="absolute top-8 font-mono text-[11px] tracking-widest text-slate-400 uppercase group-hover:text-cyan-400 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap select-none">
-            {node.id === "IDENTITY_DESIGN" ? "IDENTITY_DESIGN" : node.label}
+          <span className="absolute top-8 font-mono text-[11px] tracking-widest text-slate-400 uppercase opacity-80 group-hover:text-cyan-400 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap select-none">
+            {node.label}
           </span>
         </motion.div>
       ))}
 
       {/* SVG Path Streams connecting the architecture layers */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-30">
+      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-40">
         {/* Core River Path Routing */}
         <line x1="23%" y1="30%" x2="43%" y2="61%" stroke="white" strokeWidth="1.5" />
         <line x1="43%" y1="61%" x2="62%" y2="76%" stroke="white" strokeWidth="1.5" />
