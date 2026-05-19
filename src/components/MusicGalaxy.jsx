@@ -5,7 +5,6 @@ import {
   HiPause,
   HiShoppingCart,
   HiArrowRight,
-  HiMinusSm,
   HiPlusSm,
   HiShieldCheck,
 } from "react-icons/hi";
