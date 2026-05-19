@@ -18,11 +18,18 @@ const StarryBackground = () => {
   return (
     <Particles
       id="tsparticles"
-      className="absolute inset-0 w-full h-full pointer-events-none" // Force absolute stretch and allow clicks to pass through
+      className="absolute inset-0 w-full h-full pointer-events-none"
       options={{
-        fullScreen: { enable: false },
+        fullScreen: { enable: false }, // Restricts canvas to the local parent container boundaries
         background: { color: { value: "transparent" } },
-        // ... rest of your options are absolutely perfect!
+        
+        // Explicit layout styling engine configuration to enforce canvas scaling depth
+        style: {
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+        },
+
         fpsLimit: 120,
         particles: {
           color: { value: ["#22D3EE", "#FB923C", "#ffffff"] },

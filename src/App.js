@@ -208,13 +208,13 @@ function App() {
   };
 
 return (
-    <div className="relative min-h-screen w-full bg-[#030303] text-white selection:bg-cyan-500/30">
-      {/* 1. BACKGROUND LAYER - Ensure z-0 and pointer-events-none so it doesn't block node clicks */}
-      <div className="fixed inset-0 z-0 pointer-events-none w-full h-full">
+    <div className="relative min-h-screen w-full text-white selection:bg-cyan-500/30">
+      {/* 1. BACKGROUND LAYER - Holds a solid space-black background behind the star canvas */}
+      <div className="fixed inset-0 z-0 bg-[#030303] pointer-events-none w-full h-full">
         <StarryBackground />
       </div>
 
-      {/* 2. MAIN CONTENT LAYER - Ensure z-10 sits safely on top of the particle field */}
+      {/* 2. MAIN CONTENT LAYER - Kept transparent so everything bleeds through */}
       <main className="relative z-10 w-full min-h-screen bg-transparent">
         <AnimatePresence mode="wait">
           {/* Render the map layout if view is "map" or if a specific node is actively inspected */}

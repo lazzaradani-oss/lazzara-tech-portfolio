@@ -11,10 +11,11 @@ const ConstellationMap = ({ setView }) => {
     { id: "STUDIO_SOUND", label: "STUDIO_SOUND", color: "#ec4899", x: "80%", y: "22%" }
   ];
 
-  return (
-    <div className="relative w-full h-screen bg-[#030303] overflow-hidden">
-      {/* Interactive Star Nodes */}
-      {nodes.map((node) => (
+// Change this line at the top of your return block:
+return (
+  <div className="relative w-full h-screen bg-transparent overflow-hidden">
+    {/* Interactive Star Nodes ... */}
+    {nodes.map((node) => (
         <motion.div
           key={node.id}
           initial={{ opacity: 0, scale: 0 }}
