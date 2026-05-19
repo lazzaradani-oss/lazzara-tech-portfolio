@@ -36,7 +36,7 @@ function App() {
                 My name is Danielle Lazzara. The <strong>Web Developer</strong> to this entire digital constellation you're exploring through.
                 </p>
               <p>
-                With a dgit add src/App.jsoder's wit, and an intuition that flows between both worlds, I also take on the world of <strong> Design Consulting</strong> to help businesses and individuals architect digital experiences that are not only visually stunning but also deeply aligned with human psychology and behavior.
+                With a designer's wit and an intuition that flows between both worlds, I also take on the world of <strong> Design Consulting</strong> to help businesses and individuals architect digital experiences that are not only visually stunning but also deeply aligned with human psychology and behavior.
                 </p>
               <p>
                 I am a <strong>Creative Technologist</strong> and <strong>Junior Designer</strong>, specializing in <strong>Behavioral User Experience (UX)</strong>.  Utilizing psychology principles and narrative anchors, such as <strong>The Blue Jay Journey</strong>, to beautifully capture audience attention, reduce system onboarding friction, and maintain long-term user engagement.
