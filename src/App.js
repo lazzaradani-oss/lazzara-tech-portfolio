@@ -30,13 +30,16 @@ function App() {
             <hr className="border-slate-800" />
             <div className="space-y-4 leading-relaxed text-slate-300">
               <p>
-                Welcome to my digital portfolio! My name is Danielle Lazzara. The <strong>Web Developer</strong> to this entire digital constellation you're exploring through.
+                Welcome to my digital portfolio!
                 </p>
               <p>
-                With a designer's brain, coder's wit and an intuition that flows between both worlds, I also take on the world of <strong> Design Consulting</strong> to help businesses and individuals architect digital experiences that are not only visually stunning but also deeply aligned with human psychology and behavior.
+                My name is Danielle Lazzara. The <strong>Web Developer</strong> to this entire digital constellation you're exploring through.
                 </p>
               <p>
-                I am a <strong>Creative Technologist</strong>and <strong>Design Consultant</strong>, specializing in <strong>Behavioral User Experience (UX)</strong>.  Utilizing psychology principles and narrative anchors, such as <strong>The Blue Jay Journey</strong>, to beautifully capture audience attention, reduce system onboarding friction, and maintain long-term user engagement.
+                With a dgit add src/App.jsoder's wit, and an intuition that flows between both worlds, I also take on the world of <strong> Design Consulting</strong> to help businesses and individuals architect digital experiences that are not only visually stunning but also deeply aligned with human psychology and behavior.
+                </p>
+              <p>
+                I am a <strong>Creative Technologist</strong> and <strong>Junior Designer</strong>, specializing in <strong>Behavioral User Experience (UX)</strong>.  Utilizing psychology principles and narrative anchors, such as <strong>The Blue Jay Journey</strong>, to beautifully capture audience attention, reduce system onboarding friction, and maintain long-term user engagement.
               </p>
               <p>
                 Inspired by <strong>Jungian philosophy</strong>—specifically the principle of <strong>Identity</strong> not as one dimensional, but a multi-dimensional entity and <strong>flowing with the river</strong>, as change is the only constant. True identity is a process, not a product. Like a river, you are a continuous flow of experiences, thoughts, and cells. You are not the exact same person you were a decade ago, or even yesterday, yet there is an unbroken current of consciousness—a deep narrative thread—that makes you you.
