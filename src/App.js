@@ -30,10 +30,16 @@ function App() {
             <hr className="border-slate-800" />
             <div className="space-y-4 leading-relaxed text-slate-300">
               <p>
-                <strong>Creative Technologist</strong> and <strong>Design Consultant</strong> specializing in <strong>Behavioral User Experience (UX)</strong>. Connecting the dots between clinical behavioral science and frontend architecture to build state-of-the-art web interfaces from scratch. I design digital environments that align with natural human cognition. Utilizing psychology principles and narrative anchors, such as <strong>The Blue Jay Journey</strong>, to beautifully capture audience attention, reduce system onboarding friction, and maintain long-term user engagement.
+                Welcome to my digital portfolio! My name is Danielle Lazzara. The <strong>Web Developer</strong> to this entire digital constellation you're exploring through.
+                </p>
+              <p>
+                With a designer's brain, coder's wit and an intuition that flows between both worlds, I also take on the world of <strong> Design Consulting</strong> to help businesses and individuals architect digital experiences that are not only visually stunning but also deeply aligned with human psychology and behavior.
+                </p>
+              <p>
+                I am a <strong>Creative Technologist</strong>and <strong>Design Consultant</strong>, specializing in <strong>Behavioral User Experience (UX)</strong>.  Utilizing psychology principles and narrative anchors, such as <strong>The Blue Jay Journey</strong>, to beautifully capture audience attention, reduce system onboarding friction, and maintain long-term user engagement.
               </p>
               <p>
-                Inspired by <strong>Jungian philosophy</strong>—specifically the principle of <strong>Identity</strong> not as one dimensional, but a multi-dimensional entity and <strong>flowing with the river</strong> as change is the only constant. True identity is a process, not a product. Like a river, you are a continuous flow of experiences, thoughts, and cells. You are not the exact same person you were a decade ago, or even yesterday, yet there is an unbroken current of consciousness—a deep narrative thread—that makes you you.  
+                Inspired by <strong>Jungian philosophy</strong>—specifically the principle of <strong>Identity</strong> not as one dimensional, but a multi-dimensional entity and <strong>flowing with the river</strong>, as change is the only constant. True identity is a process, not a product. Like a river, you are a continuous flow of experiences, thoughts, and cells. You are not the exact same person you were a decade ago, or even yesterday, yet there is an unbroken current of consciousness—a deep narrative thread—that makes you you.
               </p>
               <p>
                 Like a river, my portfolio is an ever-changing platform that evolves alongside <strong>my living dialogue with technology—a space where I create generative art and engineer systems that translate raw human emotion, personal narratives, and psychological depth into fluid, intuitive digital landscapes and algorithmic soundscapes.</strong>
@@ -120,14 +126,14 @@ function App() {
                   rel="noreferrer" 
                   className="inline-flex items-center justify-center w-full px-5 py-3 font-mono text-xs font-bold tracking-widest text-black bg-cyan-400 rounded-md hover:bg-cyan-300 transition-all duration-300 transform hover:-translate-y-0.5 shadow-[0_4px_20px_rgba(34,211,238,0.3)] uppercase group"
                 >
-                  Launch Live Simulator Instance
+                  Wake Up the Simulator
                   <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-200">➔</span>
                 </a>
               </div>
             </div>
             
             <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg font-mono text-xs text-slate-400 space-y-1">
-              <p className="text-cyan-400 font-bold">{"// Technology Stack Coded From Scratch // just click the sleepy emoji to wake up the simulation!"}</p>
+              <p className="text-cyan-400 font-bold">{"// Technology Stack Coded From Scratch //"}</p>
               <p>Python, Streamlit, Logic Mapping, JSON Data Structures, Prompt Engineering</p>
             </div>
           </div>
@@ -168,12 +174,12 @@ function App() {
           </div>
         );
 
-      case "CREATIVE_NEBULA":
+      case "STUDIO_SOUND":
         return (
           <div className="space-y-6">
             <div className="space-y-1">
               <span className="font-mono text-xs text-pink-400 tracking-widest uppercase">Multi-Agent Generative Art</span>
-              <h2 className="text-3xl font-serif text-white tracking-wide">Creative Nebula</h2>
+              <h2 className="text-3xl font-serif text-white tracking-wide">STUDIO_SOUNDa</h2>
               <p className="text-xs font-mono text-slate-500">Timeline: AI Music Engineering & Asset Distribution (2026)</p>
             </div>
             <hr className="border-slate-800" />
