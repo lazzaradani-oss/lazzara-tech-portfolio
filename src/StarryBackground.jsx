@@ -18,10 +18,11 @@ const StarryBackground = () => {
   return (
     <Particles
       id="tsparticles"
-      className="w-full h-full"
+      className="absolute inset-0 w-full h-full pointer-events-none" // Force absolute stretch and allow clicks to pass through
       options={{
-        fullScreen: { enable: false }, // Critical for layering
+        fullScreen: { enable: false },
         background: { color: { value: "transparent" } },
+        // ... rest of your options are absolutely perfect!
         fpsLimit: 120,
         particles: {
           color: { value: ["#22D3EE", "#FB923C", "#ffffff"] },
